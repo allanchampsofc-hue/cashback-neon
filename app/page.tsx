@@ -53,7 +53,7 @@ export default function Home() {
     const msg = encodeURIComponent(
       `Olá! Quero garantir meu cashback da Neon Pizzaria 🍕\n\nNome: ${result.name}\nCódigo: ${result.code}\n\nAguardo o link de pagamento!`
     )
-    window.open(`https://wa.me/55${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=${msg}`, '_blank')
+    window.open(`https://wa.me/55${"12992502843"}?text=${msg}`, '_blank')
   }
 
   const slotsLeft = config?.current_slots ?? 0
