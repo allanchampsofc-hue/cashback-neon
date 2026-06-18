@@ -89,7 +89,7 @@ export default function Home() {
           </div>
 
           {step === 'landing' && !isEsgotado && (
-            <button className={styles.ctaBtn} onClick={() => setStep('form')}>
+            <button className={styles.ctaBtn} onClick={() => { setStep('form'); setTimeout(() => document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' }), 50); }}>
               Quero garantir meu cashback →
             </button>
           )}
