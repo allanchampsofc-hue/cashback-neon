@@ -1,0 +1,332 @@
+/* page.module.css */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.main {
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+  background: #0a0a0a;
+  color: #f0f0f0;
+  min-height: 100vh;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a0a00 60%, #0a0a0a 100%);
+  padding: 80px 20px 60px;
+  text-align: center;
+  border-bottom: 1px solid #222;
+}
+
+.heroInner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  display: inline-block;
+  background: #ff6b00;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 100px;
+  margin-bottom: 28px;
+}
+
+.title {
+  font-size: clamp(2.4rem, 8vw, 4.2rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.accent {
+  color: #ff6b00;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #aaa;
+  line-height: 1.6;
+  margin-bottom: 36px;
+}
+
+.slotsBox {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 14px 28px;
+  margin-bottom: 36px;
+}
+
+.slotsNumber {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #ff6b00;
+}
+
+.slotsLabel {
+  font-size: 0.95rem;
+  color: #888;
+}
+
+.esgotado {
+  font-size: 1rem;
+  color: #e55;
+  font-weight: 600;
+}
+
+.ctaBtn {
+  display: inline-block;
+  background: #ff6b00;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 16px 36px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  letter-spacing: 0.3px;
+}
+
+.ctaBtn:hover {
+  background: #e55e00;
+  transform: translateY(-2px);
+}
+
+/* Como funciona */
+.how {
+  padding: 60px 20px;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stepCard {
+  background: #141414;
+  border: 1px solid #222;
+  border-radius: 14px;
+  padding: 28px 22px;
+  text-align: center;
+}
+
+.stepIcon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.stepCard h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.stepCard p {
+  font-size: 0.875rem;
+  color: #888;
+  line-height: 1.5;
+}
+
+/* Formulário */
+.formSection {
+  padding: 40px 20px 60px;
+}
+
+.formCard {
+  max-width: 480px;
+  margin: 0 auto;
+  background: #141414;
+  border: 1px solid #222;
+  border-radius: 18px;
+  padding: 36px 32px;
+}
+
+.formTitle {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.formSubtitle {
+  font-size: 0.875rem;
+  color: #888;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+
+.field {
+  margin-bottom: 18px;
+}
+
+.field label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 7px;
+}
+
+.field input {
+  width: 100%;
+  background: #0a0a0a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: #f0f0f0;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.field input:focus {
+  border-color: #ff6b00;
+}
+
+.error {
+  color: #e55;
+  font-size: 0.875rem;
+  margin-bottom: 14px;
+}
+
+.submitBtn {
+  width: 100%;
+  background: #ff6b00;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: background 0.2s;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: #e55e00;
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.backBtn {
+  width: 100%;
+  background: transparent;
+  color: #666;
+  font-size: 0.875rem;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: color 0.2s;
+}
+
+.backBtn:hover { color: #aaa; }
+
+/* Sucesso */
+.successSection {
+  padding: 40px 20px 60px;
+}
+
+.successCard {
+  max-width: 480px;
+  margin: 0 auto;
+  background: #141414;
+  border: 1px solid #2a2a2a;
+  border-radius: 18px;
+  padding: 40px 32px;
+  text-align: center;
+}
+
+.successIcon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.successCard h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.successCard p {
+  color: #888;
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+}
+
+.codeBox {
+  background: #0a0a0a;
+  border: 2px solid #ff6b00;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #ff6b00;
+  padding: 16px;
+  margin: 16px 0 20px;
+}
+
+.successInfo {
+  font-size: 0.9rem;
+  color: #888;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.whatsappBtn {
+  width: 100%;
+  background: #25d366;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 15px;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 16px;
+  transition: background 0.2s;
+}
+
+.whatsappBtn:hover { background: #1eba56; }
+
+.successNote {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #1a1a1a;
+  padding: 24px 20px;
+  text-align: center;
+  color: #444;
+  font-size: 0.8rem;
+}

@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Dia dos Namorados 2026 — Neon Pizzaria',
-  description: 'Reserve sua mesa para o jantar especial de Dia dos Namorados na Neon Pizzaria. 12 de junho de 2026.',
+  title: 'Cashback Neon · R$49,90 por R$100',
+  description: 'Pague R$49,90 e ganhe R$100 de crédito na Neon Pizzaria. Ação limitada!',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

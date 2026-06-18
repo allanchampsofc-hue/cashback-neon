@@ -1,24 +1,2 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&family=Lato:wght@300;400;700&display=swap');
-
-:root {
-  --cream: #F5EDD8;
-  --cream-dark: #EDE0C4;
-  --red: #8B1A1A;
-  --red-light: #B52B2B;
-  --gold: #C9A84C;
-  --gold-light: #E2C97E;
-  --dark: #2A1A1A;
-  --text: #3D2B2B;
-}
-
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-body {
-  font-family: 'Lato', sans-serif;
-  background: var(--cream);
-  color: var(--text);
-}
-
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #111; }
-::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0a0a; color: #f0f0f0; }
